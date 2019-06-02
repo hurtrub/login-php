@@ -61,6 +61,44 @@
 #######################
 2nd option
 
+in login page
+
+<?php include('header.php');?>
+<div class="container login_page">
+	</div class="row">
+		<div class="col-md-12">
+			<form action="login.php" method="post" enctype="form-data/multipart">
+			<div class="login_page">
+				<div id="login_page">
+					<input type="text" class="form-control" id="username" name="username" placeholder="username">
+					<input type="password" class="form-control" id="password" name="password" placeholder="password">
+					<hr>
+					<button class="btn btn-info form-control" id="login" name="login">Login</button>
+					<hr>
+					<a href="create_account.php">Create Account?</a>
+				</div>
+				<div style="color:red; font-size:12px;">
+					<center>
+						<?php
+							session_start();
+							if(isset($_SESSION['msg'])){
+								echo $_SESSION['msg'];
+								unset($_SESSION['msg']);
+							}
+						?>
+					</center>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+<?php include('footer.php');?>
+
+
+
+
+in login action
 <?php
 	session_start();
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
