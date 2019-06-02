@@ -60,6 +60,25 @@
 
 #######################
 2nd option
+in header page
+<!DOCTYPE>
+<html>
+<header>
+	<title>1902 Practise</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/controller.js"></script>
+</header>
+<body>
+
+
+
+
+
+
+
 
 in login page
 
